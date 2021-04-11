@@ -1,3 +1,12 @@
+# Chat Application
+
+This app utilizes ReactJS and the Chat Engine framework. useState Hooks manage the state throughout the app. Credentials are passed via Axios, and kept private with the use of dotenv. Ónly the Admin can add new users and manage which chat rooms they have access to.
+
+# Future Features
+- Sign Out feature (currently clear localstorage)
+
+# Bugs
+- Uploaded images don't show in the chat feed, but do show under Photos in the Chat Settings panel
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
