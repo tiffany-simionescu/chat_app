@@ -1,11 +1,20 @@
-const MyMessage = () => {
+const MyMessage = ({ message }) => {
+  if(message?.attachements?.length > 0) {
+    return (
+      <img 
+        src={message.attachements[0].file}
+        alt="message-attachement"
+        className="message-image"
+        style={{ float: 'right' }}
+      />
+    )
+  }
+
   return (
-    <div>
-      MyMessage
+    <div className="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor: '#3b2a50' }}>
+      {message.text}
     </div>
   )
 }
 
 export default MyMessage;
-
-// 29:28
