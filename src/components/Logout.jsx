@@ -7,7 +7,7 @@ const Logout = () => {
 
   return (
     <div style={{ height: '5vh', backgroundColor: '#CABCDC' }}>
-      <button onClick={handleClick}>Logout</button>
+      <button className="logout" onClick={handleClick}>Logout</button>
     </div>
   )
 }
