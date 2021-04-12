@@ -303,13 +303,12 @@
   border-radius: 6px;
   max-width: 60%;
   color: white;
-  background-color: #7554a0;
+  background-color: #3b2a50;
   float: right;
 }
 
 .logout:hover {
   cursor: pointer;
-  background-color: white;
-  color: black;
-  transition: 0.2s ease-in;
+  background-color: #7554a0;
+  transition: 0.1s ease-in;
 }

@@ -1,6 +1,6 @@
 const Logout = () => {
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     localStorage.clear();
     window.location.reload();
   }

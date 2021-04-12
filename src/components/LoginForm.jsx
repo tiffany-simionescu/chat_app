@@ -6,8 +6,8 @@ const LoginForm = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
     const authObject = { 'Project-ID': process.env.React_App_PROJECT_ID, 'User-Name': username, 'User-Secret': password };
     
@@ -36,7 +36,7 @@ const LoginForm = () => {
           <input 
             type="text"
             value={username}
-            onChange={(event) => setUsername(event.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
             className="input"
             placeholder="Username"
             required
@@ -44,7 +44,7 @@ const LoginForm = () => {
           <input 
             type="password"
             value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             className="input"
             placeholder="Password"
             required
